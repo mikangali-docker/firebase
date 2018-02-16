@@ -1,6 +1,6 @@
 # Firebase deploy image
 
-Web js dev/deploy image with nodejs and some npm packages
+Web js ci-deploy image with nodejs and some npm packages :
 
 * firebase-tools
 * ionic
