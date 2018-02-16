@@ -10,6 +10,6 @@ ENV IONIC_VERSION=3.15.2 \
 
 # Instal npm tools
 
-RUN	npm i -g --unsafe-perm npm@${NPM_VERSION} cordova@${CORDOVA_VERSION} ionic@${IONIC_VERSION} firebase-tools@${FIREBASE_TOOL_VERSION} hexo-cli@{HEXO_CLI_VERSION} 
+RUN	npm i -g --unsafe-perm npm@${NPM_VERSION} cordova@${CORDOVA_VERSION} ionic@${IONIC_VERSION} firebase-tools@${FIREBASE_TOOL_VERSION} hexo-cli@${HEXO_CLI_VERSION} 
 
 WORKDIR "/app"
