@@ -7,10 +7,10 @@ ENV IONIC_VERSION=3.15.2 \
 	NPM_VERSION=3.10.10 \
   	HEXO_CLI_VERSION=1.0.4 \
   	FIREBASE_TOOL_VERSION=3.17.4 \
-    ANGULAR_CLI=6.0.8
+    ANGULAR_CLI_VERSION=6.0.8
 
 # Instal npm tools
 
-RUN	npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} ionic@${IONIC_VERSION} firebase-tools@${FIREBASE_TOOL_VERSION} hexo-cli@${HEXO_CLI_VERSION} @angular/cli@{ANGULAR_CLI}
+RUN	npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} ionic@${IONIC_VERSION} firebase-tools@${FIREBASE_TOOL_VERSION} hexo-cli@${HEXO_CLI_VERSION} @angular/cli@${ANGULAR_CLI_VERSION}
 
 WORKDIR "/app"
