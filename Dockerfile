@@ -1,16 +1,12 @@
-FROM node:6.13.0
+FROM node:10.17.0
 
-MAINTAINER Michael <mike@mikangali.com>
+LABEL author="mikamboo <mike@mikangali.com>"
 
-ENV IONIC_VERSION=3.15.2 \
-	CORDOVA_VERSION=6.4.0 \
-	NPM_VERSION=3.10.10 \
-  	HEXO_CLI_VERSION=1.0.4 \
-  	FIREBASE_TOOL_VERSION=6.2.2 \
-    ANGULAR_CLI_VERSION=6.0.8
+ENV FIREBASE_TOOL_VERSION 7.9.0 \
+    FIREBASE_ADMIN_VERSION 8.8.0
 
-# Instal npm tools
+# Instal npm packages
 
-RUN	npm i -g --unsafe-perm cordova@${CORDOVA_VERSION} ionic@${IONIC_VERSION} firebase-tools@${FIREBASE_TOOL_VERSION} hexo-cli@${HEXO_CLI_VERSION} @angular/cli@${ANGULAR_CLI_VERSION}
+RUN yarn global firebase-tools@${FIREBASE_TOOL_VERSION} firebase-admin@${FIREBASE_ADMIN_VERSION}
 
 WORKDIR "/app"
