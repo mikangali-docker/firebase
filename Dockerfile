@@ -7,6 +7,6 @@ ENV FIREBASE_TOOL_VERSION 7.9.0 \
 
 # Instal npm packages
 
-RUN yarn global firebase-tools@${FIREBASE_TOOL_VERSION} firebase-admin@${FIREBASE_ADMIN_VERSION}
+RUN yarn global add firebase-tools@${FIREBASE_TOOL_VERSION} firebase-admin@${FIREBASE_ADMIN_VERSION}
 
 WORKDIR "/app"
