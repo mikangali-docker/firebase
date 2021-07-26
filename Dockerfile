@@ -1,13 +1,11 @@
-FROM node:10.17.0
+FROM node:14.16.0
 
 LABEL author="mikamboo <mike@mikangali.com>"
 
-ENV FIREBASE_TOOL_VERSION 7.9.0 
-ENV FIREBASE_ADMIN_VERSION 8.8.0
+ENV FIREBASE_TOOL_VERSION 9.16.0
 
-# Instal npm packages
+RUN (curl -Ls https://cli.doppler.com/install.sh || wget -qO- https://cli.doppler.com/install.sh) | sh
 
-RUN yarn global add firebase-tools@${FIREBASE_TOOL_VERSION} && \
-    yarn global add firebase-admin@${FIREBASE_ADMIN_VERSION}
+RUN yarn global add firebase-tools@${FIREBASE_TOOL_VERSION} 
 
 WORKDIR "/app"
