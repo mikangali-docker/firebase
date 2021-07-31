@@ -1,4 +1,4 @@
-FROM node:14.16.0
+FROM node:14.17.4
 
 LABEL author="mikamboo <mike@mikangali.com>"
 
