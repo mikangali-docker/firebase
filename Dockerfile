@@ -2,7 +2,7 @@ FROM node:14.19.0
 
 LABEL author="mikamboo <mike@mikangali.com>"
 
-ENV FIREBASE_TOOL_VERSION 11.4.0
+ENV FIREBASE_TOOL_VERSION 11.22.0
 
 RUN (curl -Ls https://cli.doppler.com/install.sh || wget -qO- https://cli.doppler.com/install.sh) | sh
 
